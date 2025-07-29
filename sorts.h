@@ -1,10 +1,12 @@
 #pragma once
 #include<vector>
 
-void merge_sort(std::vector<int> &arr);
+int selection_sort(std::vector<int> arr);
 
-void insertion_sort(std::vector<int> &arr);
+int initiate_merge_sort(std::vector<int> arr);
 
-void quick_sort(std::vector<int> &arr);
+int insertion_sort(std::vector<int> arr);
 
-void gnu_sort(std::vector<int> &arr);
+int initiate_quick_sort(std::vector<int> arr);
+
+int gnu_sort(std::vector<int>& arr);
