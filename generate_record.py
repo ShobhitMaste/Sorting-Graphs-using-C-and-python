@@ -2,16 +2,12 @@ from faker import Faker
 import random
 import pandas as pd
 
+
 fake = Faker()
 # for generating names
 
-csv = pd.read_csv("./salary.csv")
-#salary data from csv file
-sal = (csv.Salary)
 # salary data i made 
-salary = [10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,120000,130000,140000,150000,55000,72000,85000,12000,5000,24000,83000]
-for s in sal:
-    salary.append(int(s))
+salary = [10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,120000,130000,140000,150000,55000,72000,85000,12000,5000,24000,83000,39343,46205,37731,43525,39891,56642,60150,54445,64445,57189,63218,55794,56957,57081,61111,67938,66029,83088,81363,93940,91738,98273,101302,113812,109431,105582,116969,112635,122391,121872]
 
 # make 5000 record random Data
 with open("./5000_record/random_employees_5000.csv", "w") as f:
@@ -139,3 +135,5 @@ with open("./15000_record/descending_employees_15000.csv", "w") as f:
         name = descending15000[x][2]
         Salary = str(descending15000[x][0])
         f.write(empid + "," + name + "," + Salary +"\n")
+        
+

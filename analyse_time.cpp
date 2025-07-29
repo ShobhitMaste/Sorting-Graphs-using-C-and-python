@@ -37,8 +37,16 @@ int main(){
     vector<int> descending_15000 = retrive_data("5000", "descending");
     vector<int> random_15000 = retrive_data("5000", "descending");
 
+    vector<vector<int>> all_data = {ascending_5000, descending_5000, random_5000, ascending_10000, descending_10000, random_10000, ascending_15000, descending_15000, random_15000};
 
-    merge_sort(ascending_5000);
+    for(auto array : all_data){
+        insertion_sort(array);
+        merge_sort(array);
+        quick_sort(array);
+        gnu_sort(array);
+    }
+
+    cout<<"Hellow From C++. Worked Perfectly."<<endl;
 
     return 0;
 }

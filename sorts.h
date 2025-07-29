@@ -6,3 +6,5 @@ void merge_sort(std::vector<int> &arr);
 void insertion_sort(std::vector<int> &arr);
 
 void quick_sort(std::vector<int> &arr);
+
+void gnu_sort(std::vector<int> &arr);
